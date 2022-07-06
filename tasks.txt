@@ -1,0 +1,81 @@
+
+
+        // Assignment
+        // assignment1
+       /* Scanner information = new Scanner(System.in);
+        System.out.println("Enter user name :");
+        String user = information.next();
+        System.out.println("Enter email:");
+        String email = information.next();
+        System.out.println("Your user name is : "+user+" and your email is : "+email);
+
+*/
+        //assignment 2
+
+
+/*
+multiplyThreeNumber(5.6,3.1,10.7);
+addResult(185.75199999999998);
+*/
+
+        //assignment 3
+      /*  Scanner input = new Scanner(System.in);
+        System.out.println("Please enter your age :");
+        int age = input.nextInt();
+        if (age > 21){
+            System.out.println("Okay");
+        } else if (age <= 12){
+            System.out.println("No");
+        }else {
+
+        }
+        System.out.println("Please enter your preferred day of the week");
+        String day = input.next();
+        switch (day){
+            case"Monday":
+                System.out.println("We're opened");
+                break;
+            case"Thursday":
+                System.out.println("We're opened");
+                break;
+            case"Friday":
+                System.out.println("Not today");
+                break;
+            case"Wednesday":
+                System.out.println("Not today");
+                break;
+
+        }
+
+*/
+//assignment 4
+    /*    for (int i = 0; i < 14; i++ ){
+            System.out.println("I love my parents");
+        }
+
+*/
+//assignment 5
+        /*while (true) {
+            Scanner input  = new Scanner(System.in);
+            System.out.println("Enter to even number");
+            int num1 = input.nextInt();
+            int num2 = input.nextInt();
+            if(num1%2!=0||num2%2!=0){
+                System.out.println("The numbers aren't even");
+
+            }
+        }*/
+
+        //assignment 2
+/*
+ public static void multiplyThreeNumber(double firstNumber, double secondNumber, double thirdNumber){
+    double result = firstNumber*secondNumber*thirdNumber;
+     System.out.println(result);
+}
+public static void addResult(double fourthNumber){
+     double add = fourthNumber + 14;
+    System.out.println(add);
+
+
+}
+*/
