@@ -1,0 +1,370 @@
+//Class of assignment 7
+package com;
+
+public class Car {
+    // attributes
+    private String model ;
+
+    private double price;
+    private double speed;
+
+
+    public Car(String model, double price,double speed) {
+        this.model = model;
+
+        this.price = price;
+        this.speed = speed;
+    }
+
+    public Car (){
+
+    }
+
+    // function /methods
+    public void brake(){
+
+
+    }
+    public void accelerate(){
+
+
+    }
+
+    public void setModel(String model){
+
+        this.model =model;
+    }
+
+    public String getModel (){
+
+        return model;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(double speed) {
+        this.speed = speed;
+    }
+}
+
+
+
+/*  //Assignment 6
+   In cars' companies ,mobiles' companies , software's companies and all manufactured factories
+   the class is the new design of car or mobile or software or product
+    and the object is the real car or mobile or the using software or the reel product */
+
+
+   /* //Assignment 7
+    Car a1 =new Car();
+    Car b1 =new Car();
+    Car c1 =new Car();
+    a1.setModel("Azera");
+    b1.setModel("Veloster");
+    c1.setModel("I30 N");
+    a1.setPrice(200);
+    b1.setPrice(350);
+    c1.setPrice(450);
+        System.out.println(a1.getModel());
+        System.out.println(c1.getPrice());
+    a1.setSpeed(150);
+    b1.setSpeed(250);
+    c1.setSpeed(300);
+        System.out.println(b1.getSpeed());
+     a1.accelerate();
+     a1.brake();
+     b1.accelerate();
+     b1.brake();
+     c1.accelerate();
+     b1.brake();*/
+
+
+
+        /* // Assignment 8
+        // (Class) is a templating of creating or instantiating an object within a program, logical entity,declare with a
+        class keyword , a class doesn't get any memory when it is created , class is declared once.
+        // (Abstract class) has abstract and non abstract methode,doesn't support multiple inheritance,has final,non final
+        static and non static variables,provide the implementation of interface,abstract keyword used to declare
+        abstract class,extends another java class and implement multiple java interface,can be extended by using keyord
+        "Extends",abstract class can has methods like private and protected.
+        //(Interface) has abstract methode,support multiple inheritance,has final and static varaibles,not provide the
+        implementation of abstarct class,interface keyword used to declare interface,extends another java interface
+        ,can be implemented by using keyword "Implemented",methods' interface are public by default.
+
+        */
+        //Assignment 9 a
+//Person class
+      package com;
+
+public class Persons {
+    //attributes
+    private String gender;
+    private String nationality;
+    private double age;
+    private String characteristic ;
+    // default constructor
+    public Persons(){
+
+    }
+    // constructor with arguments
+    public Persons(String gender,string nationality,double age,String characteristic){
+
+
+    }
+   //functions/methods
+    public void speak (){
+
+    }
+    public void listen(){
+
+    }
+    public  void walk(){
+
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getNationality() {
+        return nationality;
+    }
+
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
+
+    public double getAge() {
+        return age;
+    }
+
+    public void setAge(double age) {
+        this.age = age;
+    }
+
+    public String getCharacteristic() {
+        return characteristic;
+    }
+
+    public void setCharacteristic(String characteristic) {
+        this.characteristic = characteristic;
+    }
+}
+//Car class 
+package com;
+
+public class Car extends Persons{
+    // Attributes
+    private String model ;
+
+    private double price;
+    private double speed;
+    private String color;
+    // constructor with arguments
+    public Car(String model, double price,double speed,String color) {
+        this.model = model;
+
+        this.price = price;
+        this.speed = speed;
+        this.color = color;
+    }
+    // default constructor
+    public Car (){
+
+    }
+
+    // function /methods
+    public void brake(){
+
+
+    }
+    public void accelerate(){
+
+
+    }
+    public void airbag(){
+
+    }
+
+    public void setModel(String model){
+
+        this.model =model;
+    }
+
+    public String getModel (){
+
+        return model;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(double speed) {
+        this.speed = speed;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+}
+// Assignment 9 b
+//Interface called Bike
+package com;
+
+public interface Bike {
+    void cycle();
+
+}
+//Car class / abstract class
+
+package com;
+
+public abstract  class Car extends Motorbike implements Bike{
+    // Attributes
+    private String model ;
+
+    private double price;
+    private double speed;
+    // constructor with arguments
+    public Car(String model, double price,double speed) {
+        this.model = model;
+
+        this.price = price;
+        this.speed = speed;
+
+    }
+    // default constructor
+    public Car (){
+
+    }
+
+    // function /methods
+    public void brake(){
+
+
+    }
+    public void accelerate(){
+
+
+    }
+    public void airbag(){
+
+    }
+
+    public void setModel(String model){
+
+        this.model =model;
+    }
+
+    public String getModel (){
+
+        return model;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(double speed) {
+        this.speed = speed;
+    }
+
+@Override
+
+public void move(){
+        super.move();
+    System.out.println("Car is moving");
+
+}
+
+
+
+
+
+
+}
+
+//Motorbike class
+
+package com;
+
+public class Motorbike {
+    //Attributes
+    private String color;
+    //Default constructor and constructor with arguments
+    public Motorbike() {
+    }
+
+    public Motorbike(String color){
+
+    }
+    //Functions
+    public void move (){
+        System.out.println("Motorbike is moving");
+
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+}
+// main function
+
+
+    Car c1 = new Car() {
+        @Override
+        public void cycle() {
+            System.out.println("Bike is cycling ");
+
+        }
+    };
+
+
+        c1.move();
+    c1.setColor("red");
+        System.out.println(c1.getColor());
+        c1.cycle();
+
+
+
+
+
